@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOI DU TEMPS DES TACHES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <h1>Ma Liste de Tâches</h1>
+    <button id="addTaskBtn">Ajouter une tâche</button>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Complété</th>
+                <th>Tâche</th>
+                <th>Date</th>
+                <th>Durée</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => console.log('Service Worker registered'));
+        }
+    </script>
+</body>
+</html>
