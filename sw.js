@@ -1,5 +1,5 @@
 const CACHE_NAME = 'tasks-app-v1';
-const urlsToCache = ['index.html', 'styles.css', 'script.js'];
+const urlsToCache = ['index.html', 'styles.css', 'script.js', 'manifest.json'];  // Ajoute d'autres fichiers si besoin, comme ton icône
 
 self.addEventListener('install', event => {
     event.waitUntil(
